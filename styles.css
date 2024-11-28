@@ -67,6 +67,7 @@ header h1 span {
     font-style: italic;
     font-size: 20px;
     font-weight: lighter;
+    color: #fce301;
 }
 
 header nav {
@@ -160,7 +161,7 @@ header ul li a {
 
 .grid {
     display: flex;
-    margin-left: 60px;
+    margin-left: 15px;
     margin-top: 20px;
     
 }
@@ -328,6 +329,7 @@ For small devices (phones, less than 768px)
 
     .portfolio .grid {
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
 
     .about {
@@ -344,10 +346,12 @@ For small devices (phones, less than 768px)
 
     .portfolio .grid {
         grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        margin-left: 35px;
     }
 
     .about-item {
-        flex: 1 1 45%;
+        flex: 1 1 90%;
     }
 }
 
@@ -359,6 +363,8 @@ For small devices (phones, less than 768px)
 
     .portfolio .grid {
         grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        margin-left: 65px;
     }
 
     .about-item {
@@ -396,6 +402,7 @@ For small devices (phones, less than 768px)
 
     .portfolio .grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        align-items: center;
     }
 
     .about-item {
@@ -411,11 +418,12 @@ For small devices (phones, less than 768px)
 
     .portfolio .grid {
         grid-template-columns: repeat(3, 1fr);
+        align-items: center;
     }
 
     .about-item {
-        flex: 1 1 45%;
-        max-width: 45%;
+        flex: 1 1 90%;
+        max-width: 90%;
     }
 }
 
@@ -432,6 +440,7 @@ For small devices (phones, less than 768px)
 
     .portfolio .grid {
         grid-template-columns: repeat(4, 1fr);
+        align-items: center;
     }
 
     .about-item {
@@ -448,6 +457,7 @@ For small devices (phones, less than 768px)
 
     .portfolio .grid {
         grid-template-columns: repeat(5, 1fr);
+        align-items: center;
     }
 
     .about-item {
@@ -472,11 +482,12 @@ For small devices (phones, less than 768px)
     }
 
     .about-item {
-        flex: 1 1 100%;
+        flex: 1 1 90%;
     }
 
     .portfolio .grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        align-items: center;
     }
 
     .team .member {
@@ -492,10 +503,11 @@ For small devices (phones, less than 768px)
 
     .portfolio .grid {
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
 
     .about-item {
-        flex: 1 1 45%;
+        flex: 1 1 90%;
     }
 
     .team .member {
@@ -511,6 +523,7 @@ For small devices (phones, less than 768px)
 
     .portfolio .grid {
         grid-template-columns: repeat(3, 1fr);
+        align-items: center;
     }
 
     .team .member {
@@ -678,7 +691,7 @@ For small devices (phones, less than 768px)
 /* Medium Screens (Tablets - 576px to 768px) */
 @media (min-width: 576px) and (max-width: 768px) {
     .about-item {
-        flex: 1 1 calc(50% - 15px); /* Two columns */
+        flex: 1 1 calc(900% - 15px); /* Two columns */
         padding: 15px;
     }
 
@@ -694,7 +707,7 @@ For small devices (phones, less than 768px)
 /* Large Screens (Desktops - 768px to 1200px) */
 @media (min-width: 768px) and (max-width: 1200px) {
     .about-item {
-        flex: 1 1 calc(33.333% - 20px); /* Three columns */
+        flex: 1 1 calc(90% - 20px); /* Three columns */
         padding: 20px;
     }
 
